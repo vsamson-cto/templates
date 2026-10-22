@@ -1,0 +1,50 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f7f7f8;
+  color: #1d1d1f;
+  margin: 0;
+}
+
+main {
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.rules { color: #4a4a4f; }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+label { font-weight: 600; width: 100%; }
+
+button {
+  padding: 0.5rem 1.25rem;
+  font: inherit;
+  border: 0;
+  border-radius: 6px;
+  background: #1f5fbf;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled { opacity: 0.6; cursor: progress; }
+
+#messages { list-style: none; padding: 0; }
+
+#messages li {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border-left: 4px solid;
+}
+
+#messages li.success { background: #e7f6ec; border-color: #1e8e3e; color: #0d4f22; }
+#messages li.success::before { content: "✓ "; }
+#messages li.error { background: #fdecea; border-color: #c5221f; color: #7a1411; }
+#messages li.error::before { content: "✗ "; }

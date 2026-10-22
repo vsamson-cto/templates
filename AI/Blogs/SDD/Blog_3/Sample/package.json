@@ -1,0 +1,14 @@
+{
+  "name": "pdf-upload",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Upload up to 5 PDF files (2 MB max each) per browser session — SPEC-001",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test --test-timeout=30000 \"test/**/*.test.js\""
+  }
+}

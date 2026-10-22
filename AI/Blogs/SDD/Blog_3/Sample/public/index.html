@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload PDFs</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Upload PDF files</h1>
+    <p class="rules">You can upload up to 5 PDF files per browser session. Each file must be 2 MB or smaller.</p>
+
+    <form id="upload-form">
+      <label for="file-input">Choose PDF files</label>
+      <input id="file-input" name="files" type="file" accept="application/pdf,.pdf" multiple>
+      <button id="upload-button" type="submit">Upload</button>
+    </form>
+
+    <ul id="messages" aria-live="polite" aria-label="Upload results"></ul>
+  </main>
+</body>
+</html>
